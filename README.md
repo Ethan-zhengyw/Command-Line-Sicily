@@ -24,8 +24,8 @@ Our school has a online check system[http://soj.me] for our source code, and eve
         sudo python ./main.py [problem_ID] [path_to_your_sourcefile]
   
   - display the result returned by server
-  
-        ![](https://raw.githubusercontent.com/Ethan-zhengyw/Sicily-Online-Judge/master/screenshots/Accepted.png)
+  	![image](https://raw.githubusercontent.com/Ethan-zhengyw/Sicily-Online-Judge/master/screenshots/Accepted.png)
+
 ### Quick Start
       
   - Download this repository
