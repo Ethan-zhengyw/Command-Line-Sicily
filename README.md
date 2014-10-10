@@ -1,4 +1,4 @@
-Sicily-Online-Judge
+Command Line Sicily
 ===================
 
 This little project help you to submit your source code to soj.me and get the response you need by using terminal commands
