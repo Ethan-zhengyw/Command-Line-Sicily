@@ -30,7 +30,7 @@ Our school has a online check system[http://soj.me] for our source code, and eve
       
   - Download this repository
         
-        sudo git clone git://github.com/Ethan-zhengyw/Sicily-Online-Judge.git
+        sudo git clone git://github.com/Ethan-zhengyw/Command-Line-Sicily.git
   
   - Decompressed and now you get a folder Sicily-Online-Judge which contains only three .py files.
         
