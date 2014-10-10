@@ -34,7 +34,7 @@ Our school has a online check system[http://soj.me] for our source code, and eve
   
   - Decompressed and now you get a folder Sicily-Online-Judge which contains only three .py files.
         
-    edit file soj.conf: replace USERNAME and PASSWORD with your own information
+    edit file ./sicily/soj.conf: replace USERNAME and PASSWORD with your own information
     content of file soj.conf after your modify should be:
 
         USERNAME = [this_is_your_username]
@@ -50,6 +50,7 @@ If you are programming with vim, then there is a much cool way to submit your co
 All you have to do is the following things
   
   - get this repository's folder and place it in anywhere you want
+  - modify ./sicily/soj.conf and put it into the same directory with your source code file
   - add these code into your vimrc file (Do replace content between '' with your main.py path)
   
         let g:PATH_SICILY_MAINPY='/home/zheng/文档/sicily/main.py'
