@@ -25,7 +25,7 @@ Our school has a online check system[http://soj.me] for our source code, and eve
   
   - display the result returned by server
   
-        ![Alt text](/srceenshots/result.png?raw=true "Result Screenshot Example")
+        ![](https://raw.githubusercontent.com/Ethan-zhengyw/Sicily-Online-Judge/master/screenshots/Accepted.png)
 ### Quick Start
       
   - Download this repository
