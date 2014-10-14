@@ -3,6 +3,16 @@ import urllib2
 
 header = {'Accept-Charset':'GBK,utf-8;q=0.7,*;q=0.3','User-Agent' : 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.151 Safari/534.16'}
 
+def req_easy(url_):
+
+    req = urllib2.Request(
+        url = url_,
+        headers = header
+    )
+
+    return req
+
+
 def req_login(id, pwd):
 
     data_login = urllib.urlencode ({
@@ -60,3 +70,9 @@ def req_problem(problemID):
     )
 
     return req
+
+
+def req_status_detail(sid):
+
+    url = 'http://soj.me/process.php?act=ViewCE&sid=' + sid
+    return req_easy(url)
