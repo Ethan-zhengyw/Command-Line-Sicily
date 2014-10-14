@@ -71,17 +71,16 @@ def submit_sourceFile(problemID, filename):
 def get_problem(problemID):
 
     data = opener.open(model.req_problem(problemID)).read()
-
-    print data
+    return data_re.find_problem(data)
     
 
 def display_problemInfo(problem):
 
     print " Problem Info"
     print "+----------------------------"
-    print " [" + problem["title"] + "]"
-    print " [" + problem["time_limit"] + "]",
-    print " [" + problem["memory_limit"] + "]\n"
+    print " [" + problem["id"] + ". " + problem["title"] + "]"
+    print " [Time Limit: " + problem["time_limit"] + "]",
+    print " [Memory Limit: " + problem["memory_limit"] + "]\n"
 
 
 def display_result(result):
@@ -113,6 +112,29 @@ def get_userInfo(userconf):
     return id, pwd
 
 
-#problem = get_problem("1150")
-#for key in problem:
-#    print key, problem[key]
+def display_problemInfo_detail(problem):
+
+    print bcolors.OKBLUE + " [" + problem["id"] + ". " + problem["title"] + "]" + bcolors.ENDC
+    print "+===========================\n"
+
+    print bcolors.FAIL + " [Constraints]" + bcolors.ENDC
+    print "+-----------------------"
+    print " Time Limit: " + problem["time_limit"] + ",",
+    print "Memory Limit: " + problem["memory_limit"]
+    print 
+
+    print bcolors.OKGREEN + " [Input]" + bcolors.ENDC
+    print "+-----------------------"
+    print problem["input"]
+
+    print bcolors.OKGREEN + " [Output]" + bcolors.ENDC
+    print "+-----------------------"
+    print problem["output"]
+
+    print bcolors.WARNING + " [Sample Input]" + bcolors.ENDC
+    print "+-----------------------"
+    print problem["sample_input"]
+
+    print bcolors.WARNING + " [Sample Output]" + bcolors.ENDC
+    print "+-----------------------"
+    print problem["sample_output"]
